@@ -1,47 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-21T15:35:36 IST" name="Suite" finished-at="2026-01-21T15:35:36 IST" duration-ms="292">
+  <suite started-at="2026-01-30T15:28:37 IST" name="Default suite" finished-at="2026-01-30T15:28:37 IST" duration-ms="63">
     <groups>
     </groups>
-    <test started-at="2026-01-21T15:35:36 IST" name="Test" finished-at="2026-01-21T15:35:36 IST" duration-ms="292">
-      <class name="attributes.timeout_demo">
-        <test-method signature="f1()[pri:0, instance:attributes.timeout_demo@222545dc]" started-at="2026-01-21T15:35:36 IST" name="f1" finished-at="2026-01-21T15:35:36 IST" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f1 -->
-        <test-method signature="f2()[pri:0, instance:attributes.timeout_demo@222545dc]" started-at="2026-01-21T15:35:36 IST" name="f2" finished-at="2026-01-21T15:35:36 IST" duration-ms="215" status="FAIL">
-          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+    <test started-at="2026-01-30T15:28:37 IST" name="Default test" finished-at="2026-01-30T15:28:37 IST" duration-ms="63">
+      <class name="tdd_with_testng.CalculatorTest">
+        <test-method signature="testAdd()[pri:0, instance:tdd_with_testng.CalculatorTest@222545dc]" started-at="2026-01-30T15:28:37 IST" name="testAdd" finished-at="2026-01-30T15:28:37 IST" duration-ms="9" status="FAIL">
+          <exception class="java.lang.Error">
             <message>
-              <![CDATA[Method attributes.timeout_demo.f2() didn't finish within the time-out 200]]>
+              <![CDATA[Unresolved compilation problem: 
+The method add(int, int) is undefined for the type Calculator
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method attributes.timeout_demo.f2() didn't finish within the time-out 200
-at java.base/java.lang.Thread.sleep0(Native Method)
-at java.base/java.lang.Thread.sleep(Thread.java:509)
-at attributes.timeout_demo.f2(timeout_demo.java:13)
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The method add(int, int) is undefined for the type Calculator
+
+at tdd_with_testng.CalculatorTest.testAdd(CalculatorTest.java:12)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
-at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
-at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f2 -->
-        <test-method signature="f3()[pri:0, instance:attributes.timeout_demo@222545dc]" started-at="2026-01-21T15:35:36 IST" name="f3" finished-at="2026-01-21T15:35:36 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- testAdd -->
+        <test-method signature="testDivide()[pri:0, instance:tdd_with_testng.CalculatorTest@222545dc]" started-at="2026-01-30T15:28:37 IST" name="testDivide" finished-at="2026-01-30T15:28:37 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f3 -->
-      </class> <!-- attributes.timeout_demo -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- testDivide -->
+        <test-method signature="testDivideByZero()[pri:0, instance:tdd_with_testng.CalculatorTest@222545dc]" started-at="2026-01-30T15:28:37 IST" name="testDivideByZero" finished-at="2026-01-30T15:28:37 IST" duration-ms="1" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Cannot divide by zero]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Cannot divide by zero
+at tdd_with_testng.Calculator.divide(Calculator.java:19)
+at tdd_with_testng.CalculatorTest.testDivideByZero(CalculatorTest.java:57)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivideByZero -->
+        <test-method signature="testMultiply()[pri:0, instance:tdd_with_testng.CalculatorTest@222545dc]" started-at="2026-01-30T15:28:37 IST" name="testMultiply" finished-at="2026-01-30T15:28:37 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiply -->
+        <test-method signature="testSubtract()[pri:0, instance:tdd_with_testng.CalculatorTest@222545dc]" started-at="2026-01-30T15:28:37 IST" name="testSubtract" finished-at="2026-01-30T15:28:37 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubtract -->
+      </class> <!-- tdd_with_testng.CalculatorTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
